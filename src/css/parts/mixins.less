@@ -1,0 +1,36 @@
+.button-border(@padding: 8px 41px;@fontSize: 14px; @lineHeight: 24px) {
+	padding: @padding;
+	display: inline-block;
+	font-size: @fontSize;
+	line-height: @lineHeight;
+	color: @brown;
+	text-transform: uppercase;
+	border: 1px @linkDelivery solid;
+	text-decoration: none;
+	background-color: @white;
+	transition-property: background-color, border, color;
+	transition-duration: 300ms, 300ms, 300ms;
+	transition-timing-function: linear;
+
+	&:hover {
+		background-color: @blue;
+		border-color: @blue;
+		color: @white;
+	}
+}
+
+.button-blue(@padding: 8px 24px; @fontSize: 14px;) {
+	padding: @padding;
+	font-size: @fontSize;
+	color: @white;
+	background-color: @buy;
+	border-radius: 3px;
+	text-decoration: none;
+	transition-property: background-color;
+	transition-duration: 300ms;
+	transition-timing-function: linear;
+
+	&:hover {
+		background-color: @blueDark;
+	}
+}

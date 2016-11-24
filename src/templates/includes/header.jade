@@ -1,0 +1,40 @@
+
+mixin header()
+   header
+      .header-top
+         .container
+            .row
+               .col-xs-3
+                  a(href="javascript:void(0)")
+                     img(src="../img//logo.png")
+               .col-xs-3.mt-block
+                  +svg('stamps')
+                  .header-top__stamp.dop-info
+                     span  Печати и штампы
+                     span.phone  +7 (495) 632 00 33
+               .col-xs-2.mt-block
+                  a(href="javascript:void(0)").order-print  Заказать печать
+               .col-xs-3.col-md-offset-1.mt-block
+                  +svg('firms')
+                  .header-top__firms.dop-info
+                     span  регистрация и ликвадиция фирм
+                     span.phone  +7 (495) 778 36 49
+      .header-bottom
+         .container
+            .row
+               .col-xs-5
+                  nav.menu
+                     li:   a(href="javascript:void(0)")
+                        +svg('home')
+                     li:   a(href="javascript:void(0)")  О компании
+                     li:   a(href="javascript:void(0)")  Печати
+                     li:   a(href="javascript:void(0)")  Фирмы
+                     li:   a(href="javascript:void(0)")  Контакты
+               .col-xs-3.col-xs-offset-4
+                  form.search-form
+                     fieldset
+                        input(type="text" placeholder="Поиск по сайту")
+                        input(type="submit" value="")
+
+
+

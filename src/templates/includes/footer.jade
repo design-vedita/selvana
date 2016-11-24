@@ -1,0 +1,40 @@
+
+mixin footer()
+    footer
+        .top-footer
+            .container
+                .row
+                    .col-md-3
+                        img(src="../img/logo-footer.png")
+                    .col-md-3
+                        nav.menu-footer
+                            li: a(href="javascript:void(0)")    Главная
+                            li: a(href="javascript:void(0)")    Фирмы
+                            li: a(href="javascript:void(0)")    О компании
+                            li: a(href="javascript:void(0)")    Контакты
+                            li: a(href="javascript:void(0)")    Печати
+                    .col-md-3
+                        +svg('stamps')
+                        .top-footer__stamp.dop-info
+                            span  Печати и штампы
+                            span.phone  +7 (495) 632 00 33
+                            a(href="javascript:void(0)")    Заказать печать
+                    .col-md-3
+                        +svg('firms')
+                        .top-footer__firms.dop-info
+                            span  регистрация и ликвадиция фирм
+                            span.phone  +7 (495) 778 36 49
+        .bottom-footer
+            .container
+                .row
+                    .col-md-4
+                        p.copyright Все права защищены © 2016 г.
+                    .col-md-8
+                        .dev-block
+                            span    Разработка и продвижение сайтов
+                            a(href="http://www.vedita.ru" target="_blank")
+                                img(src="../img/vedita.png").developer
+
+
+
+
